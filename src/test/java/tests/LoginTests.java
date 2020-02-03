@@ -21,7 +21,7 @@ public void setUp(){
     driver = new ChromeDriver();
     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 }
-
+// Test 1 for loogin
 @Test
     public void loginTest1(){
     driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/ login.aspx");
@@ -30,15 +30,15 @@ public void setUp(){
 
     Assert.assertEquals(driver.getTitle(), "Web Orders");
 }
+// Test 2 for logout
 @Test
     public void logOutTest()
 {
     driver.get("http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/ login.aspx");
     driver.findElement(By.id("ctl00_MainContent_username")).sendKeys("Tester");
     driver.findElement(By.id("ctl00_MainContent_password")).sendKeys("test" + Keys.ENTER);
-
-
 }
+// After method for closing browser
     @AfterMethod
     public void cleanUp(){
         driver.close();
