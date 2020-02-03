@@ -1,3 +1,5 @@
 .idea/
 gitDay3.iml
 target/
+#Some new changes
+/someFolder
