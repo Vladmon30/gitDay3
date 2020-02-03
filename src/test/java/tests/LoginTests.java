@@ -12,7 +12,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
-
+// Login tests
+//Witthout PAge object
 public class LoginTests {
 WebDriver driver;
 
