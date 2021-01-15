@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 //Witthout PAge object
 public class LoginTests {
 WebDriver driver;
-
+// some new annotation
 @BeforeClass
 public void setUp(){
 
